@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout <<"Enter the number of triagles: ";
+    cin>>n;
+    for(int t=1;t<=n;t++){
+        for(int r=1; r<=n+1;r++){
+            for(int c=1; c<=n;c++){
+                if(r==n+1) cout<<"-";
+                else if  (t%2==1&& c<=r) cout<<"X";
+                else if  (t%2==0&& c>=r) cout<<"X";
+                else cout<<" ";
+            }
+            cout<<endl;
+        }
+    }
+    return 0;
+}
